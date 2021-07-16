@@ -1,10 +1,10 @@
 import Response from "../utils/Response";
 import HttpStatus from "http-status";
-import axios from "axios"
+import axios from "axios";
 
 class AlbumController {
   static getAlbumById = async (req, res) => {
-    const { albumId } = req.param
+    const { albumId } = req.params;
     const url = `https://jsonplaceholder.typicode.com/albums/${albumId}/photos`;
 
     const config = {
